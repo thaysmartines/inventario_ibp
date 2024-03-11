@@ -37,7 +37,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
     setState(() {
       _isLogin = showLoginScreen;
       if (_isLogin) {
-        _title = 'INVENTÁRIO DE \n BENS PATRIMONIAIS';
+        _title = 'Bem vindo ao IBP';
         _actionButton = 'Login';
         _toggleButton = 'Ainda não tem conta? Cadastre-se agora.';
         _passwordConfirmVisivel = false;
@@ -49,7 +49,6 @@ class _LoginPageState extends ConsumerState<LoginPage> {
         _passwordConfirmVisivel = true;
         _showPassword = false;
         _password.clear();
-        
       }
     });
   }
@@ -117,7 +116,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/images/logo.png', height: 200, width: 150),
+                Image.asset('assets/images/logo.png', height: 300, width: 300),
                 Text(_title, textAlign: TextAlign.center),
                 Padding(
                   padding: const EdgeInsets.symmetric(
